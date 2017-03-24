@@ -23,7 +23,7 @@ for DataBase Applications，文中提到的 Flajolet–Martin 算法，开创 Ca
 定义如下前提：
 
 * 定义哈希函数 hash(x) 将输入 x 映射到 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\left[0,2^{L}-1\right]"> 空间中，保证输出值 y 充分均匀地分布；
-* 对于任意非负整数 y，定义 bit(y, k) 表示 y 二进制表示中的第 k 位 bit, 那么 <img src="http://chart.googleapis.com/chart?cht=tx&chl=y= \sum_{i}^{L}bit(y,k)2^{k}">；
+* 对于任意非负整数 y，定义 bit(y, k) 表示 y 二进制表示中的第 k 位 bit, 那么 <img src="http://chart.googleapis.com/chart?cht=tx&chl= {\displaystyle  y= \sum_{i}^{L}bit(y,k)2^{k}}">；
 * 定义函数 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\rho(y)"> 为从 y 右侧开始第一个 1-bit 所在的位置， <img src="http://chart.googleapis.com/chart?cht=tx&chl=\rho(y)=\min_{k\geq 0}\mathrm {bit} (y,k)\neq 0">。例如 <img src="http://chart.googleapis.com/chart?cht=tx&chl={\displaystyle \rho(13)= \rho(1101_{2})=0}">, <img src="http://chart.googleapis.com/chart?cht=tx&chl=\rho(8)= \rho(1000_{2})=3">。我们假定 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\rho(0)=L"> 。
 
 Flajolet-Martin 算法给出如下步骤：
@@ -93,7 +93,7 @@ Philippe Flajolet (French: [flaʒɔlɛ]）生于法国里昂，就读于巴黎�
 Philippe Flajolet 一生发表过190余篇文章。其中 Flajolet–Martin 算法更是被引用达1038次之多。这是一个怎样的概念呢？<< Nature >> 曾发布过统计，如果把全球范围内所有学科的论文叠起来，高度堪比一座近6千米高的山峰；而被引用次数超过1000次的文章仅为1.5m的山顶。
 
 顺便一提，2014年四月 Redis 官方推出新的数据结构 HyperLogLog。其中相关的 Redis 操作命令都以 PF 为前缀，用以纪念这位伟大的科学家 Philippe Flajolet。
- 
+
 
 ## Reference
 
